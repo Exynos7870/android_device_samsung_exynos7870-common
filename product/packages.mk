@@ -16,3 +16,7 @@
 # TextClassifier
 PRODUCT_PACKAGES += \
     textclassifier.smartselection.bundle1
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
