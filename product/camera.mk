@@ -15,6 +15,7 @@
 
 #Camera
  PRODUCT_PACKAGES += \
+    camera.universal7870 \
     libstagefright_shim \
     camera.device@3.2-impl \
     camera.device@1.0-impl \
