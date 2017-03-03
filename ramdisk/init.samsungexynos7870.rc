@@ -961,6 +961,13 @@ on property:ro.wsmd.enable=true
     chown system system /dev/socket/wsm_socket
     start wsmd
 
+service cameraserver /system/bin/cameraserver
+    class main
+    user cameraserver
+    group media_rw audio camera drmrpc inet shell sdcard_r system
+    ioprio rt 4
+    writepid /dev/cpuset/foreground/tasks
+
 # IMS Stack
 service imsd /system/bin/imsd
     class main
