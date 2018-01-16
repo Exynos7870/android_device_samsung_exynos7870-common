@@ -1,6 +1,5 @@
 /*
  * Copyright (c) 2015 The CyanogenMod Project
- *               2017-2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,13 +14,15 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.doze;
+package com.custom.ambient.display;
 
 import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.os.PowerManager;
+import android.os.PowerManager.WakeLock;
 import android.os.SystemClock;
 import android.util.Log;
 
@@ -30,19 +31,25 @@ public class TiltSensor implements SensorEventListener {
     private static final boolean DEBUG = false;
     private static final String TAG = "TiltSensor";
 
+    private static final int SENSOR_WAKELOCK_DURATION = 200;
     private static final int BATCH_LATENCY_IN_MS = 100;
     private static final int MIN_PULSE_INTERVAL_MS = 2500;
 
+    private PowerManager mPowerManager;
     private SensorManager mSensorManager;
     private Sensor mSensor;
+    private WakeLock mSensorWakeLock;
     private Context mContext;
 
     private long mEntryTimestamp;
 
     public TiltSensor(Context context) {
         mContext = context;
-        mSensorManager = mContext.getSystemService(SensorManager.class);
+        mPowerManager = (PowerManager) mContext.getSystemService(Context.POWER_SERVICE);
+        mSensorManager = (SensorManager) mContext.getSystemService(Context.SENSOR_SERVICE);
         mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_TILT_DETECTOR);
+        mSensorWakeLock = mPowerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK,
+                "SensorWakeLock");
     }
 
     @Override
