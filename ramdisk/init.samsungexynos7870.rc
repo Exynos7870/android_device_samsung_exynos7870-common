@@ -595,6 +595,12 @@ setprop ro.mst.support 1
 #Meta event
     chown system radio /sys/class/sensors/sensor_dev/flush
 
+# EFS permissions
+
+    chown system radio /efs/nv_data.bin
+    chown system radio /efs/nv_data.bin.md5
+    chown system radio /cpefs/.nv_core.bak
+
 # Permission for USB SELECT
     chown system system /sys/class/android_usb/android0/enable
     chmod 0660 /sys/class/android_usb/android0/enable
