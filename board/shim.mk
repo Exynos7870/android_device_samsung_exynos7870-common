@@ -16,4 +16,5 @@
 # Shim
 TARGET_LD_SHIM_LIBS += \
     /system/lib/libbauthserver.so|/system/lib/libbauthtzcommon_shim.so \
-    /system/lib/libexynoscamera.so|/system/vendor/lib/libcamhelpr.so
+    /system/lib/libexynoscamera.so|/system/vendor/lib/libcamhelpr.so \
+    /system/lib/libstagefright.so|/system/lib/libstagefright_shim.so
