@@ -13,9 +13,11 @@
 # limitations under the License.
 #
 
-#ADB
-ADDITIONAL_DEFAULT_PROPERTIES += \
-    ro.adb.secure=0 \
-    ro.secure=0 \
-    ro.debuggable=1 \
-    persist.service.adb.enable=1
+# ADB
+PRODUCT_PROPERTY_OVERRIDES += \
+       ro.secure=0 \
+       ro.adb.secure=0 \
+       ro.hardware=universal7870 \
+       persist.service.adb.enable=1 \
+       persist.service.debuggable=1 \
+       persist.sys.usb.config=adb
