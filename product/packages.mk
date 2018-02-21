@@ -16,3 +16,7 @@
 # TextClassifier
 PRODUCT_PACKAGES += \
     textclassifier.smartselection.bundle1
+
+# Advanced Display
+PRODUCT_PACKAGES += \
+    AdvancedDisplay
