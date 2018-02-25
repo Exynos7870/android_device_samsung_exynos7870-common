@@ -8,7 +8,8 @@
 	Copyright (C) 2018 Shivam Jha
 	Copyright (C) 2018 Mohi1117
 	Copyright (C) 2018 Oves Bilal
-        Copyright (C) 2018 Sean Hoyt
+	Copyright (C) 2018 Sean Hoyt
+	Copyright (C) 2018 Abhay Ruparel
 
 
 ### License
