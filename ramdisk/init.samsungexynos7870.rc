@@ -105,9 +105,6 @@ on post-fs-data
 
     mkdir /data/anr 0775 system system
 
-    restorecon_recursive /data
-    restorecon_recursive /efs
-
 on boot
     # 1-key hard reset
     chown system system /sys/power/reset_enabled
@@ -126,11 +123,6 @@ on boot
     chmod 0664 /sys/class/devfreq/17000020.devfreq_int/max_freq
     chown radio system /sys/class/devfreq/17000020.devfreq_int/available_frequencies
     chmod 0664 /sys/class/devfreq/17000020.devfreq_int/available_frequencies
-
-    # EFS permissions
-    chown system radio /efs/nv_data.bin
-    chown system radio /efs/nv_data.bin.md5
-    chown system radio /cpefs/.nv_core.bak
 
     chown system system /dev/iio:device0
     chmod 660  /dev/iio:device0
@@ -388,10 +380,6 @@ on boot
     chmod 444 /sys/class/sec/sdcard/cd_cnt
     chown system system /sys/class/sec/sddata/sd_data
     chmod 444 /sys/class/sec/sddata/sd_data
-
-    # SSWAP
-    write /proc/sys/vm/swappiness 200
-
 on fs
     mount_all /fstab.samsungexynos7870 --early
 
@@ -504,16 +492,3 @@ service gpsd /system/bin/gpsd
 service charger /charger
     class charger
     seclabel u:r:healthd:s0
-
-service sswap /system/bin/sswap -s
-    class core
-    user root
-    group root
-    oneshot
-
-service cameraserver /system/bin/cameraserver
-    class main
-    user cameraserver
-    group media_rw audio camera drmrpc inet shell sdcard_r system
-    ioprio rt 4
-    writepid /dev/cpuset/foreground/tasks

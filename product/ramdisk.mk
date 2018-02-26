@@ -28,5 +28,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/cbd:system/bin/cbd
 
 # sswap
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/ramdisk/sswap:system/bin/sswap
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/ramdisk/sswap:system/bin/sswap
