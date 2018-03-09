@@ -25,6 +25,3 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # Call Samsung LSI Board Support Package
 $(call inherit-product, hardware/samsung_slsi-cm/exynos5/exynos5.mk)
 $(call inherit-product, hardware/samsung_slsi-cm/exynos7870/exynos7870.mk)
-
-# call the common proprietary setup
-$(call inherit-product, vendor/samsung/exynos7870-common/exynos7870-common-vendor.mk)
