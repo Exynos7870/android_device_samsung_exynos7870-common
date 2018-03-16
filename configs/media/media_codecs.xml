@@ -123,7 +123,7 @@ Only the three quirks included above are recognized at this point:
             <Limit name="concurrent-instances" max="16" />
             <Feature name="adaptive-playback" />
         </MediaCodec>
-        <!--<MediaCodec name="OMX.Exynos.VP8.Decoder" type="video/x-vnd.on2.vp8" >
+        <MediaCodec name="OMX.Exynos.VP8.Decoder" type="video/x-vnd.on2.vp8" >
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports" />
             <Quirk name="decoder-ignores-streamcorrupt-error" />
@@ -135,7 +135,7 @@ Only the three quirks included above are recognized at this point:
             <Limit name="bitrate" range="1-40000000" />
             <Limit name="concurrent-instances" max="16" />
             <Feature name="adaptive-playback" />
-        </MediaCodec>-->
+        </MediaCodec>
         <MediaCodec name="OMX.Exynos.hevc.dec" type="video/hevc" >
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports" />
@@ -212,7 +212,7 @@ Only the three quirks included above are recognized at this point:
             <Limit name="bitrate" range="1-40000000" />
             <Limit name="concurrent-instances" max="16" />
         </MediaCodec>
-        <!--<MediaCodec name="OMX.Exynos.VP8.Encoder" type="video/x-vnd.on2.vp8" >
+        <MediaCodec name="OMX.Exynos.VP8.Encoder" type="video/x-vnd.on2.vp8" >
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports" />
             <Quirk name="video-controller-check-enable" />
@@ -222,7 +222,7 @@ Only the three quirks included above are recognized at this point:
             <Limit name="blocks-per-second" min="1" max="486000" />
             <Limit name="bitrate" range="1-40000000" />
             <Limit name="concurrent-instances" max="16" />
-        </MediaCodec>-->
+        </MediaCodec>
         <MediaCodec name="OMX.Exynos.HEVC.Encoder" type="video/hevc" >
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports" />
