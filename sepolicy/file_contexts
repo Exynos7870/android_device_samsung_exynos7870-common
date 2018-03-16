@@ -61,14 +61,11 @@
 
 /sys/devices/virtual/camera(/.*)?            u:object_r:sysfs_camera_writable:s0
 
-/sys/devices/[0-9]*\.dsim/lcd/panel/mdnie/mode                   u:object_r:sysfs_mdnie_writable:s0
-/sys/devices/[0-9]*\.dsim/lcd/panel/mdnie/scenario               u:object_r:sysfs_mdnie_writable:s0
-/sys/devices/[0-9]*\.dsim/lcd/panel/mdnie/night_mode             u:object_r:sysfs_mdnie_writable:s0
-/sys/devices/[0-9]*\.dsim/lcd/panel/mdnie/lux                    u:object_r:sysfs_mdnie_writable:s0
-/sys/devices/[0-9]*\.dsim/lcd/panel/mdnie/sensorRGB              u:object_r:sysfs_mdnie_writable:s0
-/sys/devices/[0-9]*\.dsim/lcd/panel/mdnie/whiteRGB               u:object_r:sysfs_mdnie_writable:s0
-/sys/devices/[0-9]*\.dsim/lcd/panel/mdnie/light_notification     u:object_r:sysfs_mdnie_writable:s0
-/sys/devices/[0-9]*\.dsim/lcd/panel/mdnie/accessibility          u:object_r:sysfs_mdnie_writable:s0
+/sys/devices/[0-9]*\.dsim/lcd/panel/mdnie/mode       u:object_r:sysfs_mdnie_writable:s0
+/sys/devices/[0-9]*\.dsim/lcd/panel/mdnie/scenario   u:object_r:sysfs_mdnie_writable:s0
+/sys/devices/[0-9]*\.dsim/lcd/panel/mdnie/night_mode u:object_r:sysfs_mdnie_writable:s0
+/sys/devices/[0-9]*\.dsim/lcd/panel/mdnie/lux        u:object_r:sysfs_mdnie_writable:s0
+/sys/devices/[0-9]*\.dsim/lcd/panel/mdnie/sensorRGB  u:object_r:sysfs_mdnie_writable:s0
 
 /system/bin/mcDriverDaemon   u:object_r:tee_exec:s0
 /system/bin/modemloader      u:object_r:modemloader_exec:s0
