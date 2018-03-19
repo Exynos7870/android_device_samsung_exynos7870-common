@@ -17,7 +17,7 @@
 # so we create symlinks in setup-makefiles.sh.
 vendor/lib/egl/libGLES_mali.so
 
-# OMX - From the S8
+# OMX from stock
 lib/omx/libOMX.Exynos.AVC.Decoder.so|6b5690ea2755207a6c5dbbd704bd46e26979e997
 lib/omx/libOMX.Exynos.AVC.Encoder.so|329941706e70908843909552536839399f9e0c1f
 lib/omx/libOMX.Exynos.HEVC.Decoder.so|b80b5b84c3d2a77219238ed2d70efe1c4be22059
@@ -27,40 +27,3 @@ lib/omx/libOMX.Exynos.MPEG4.Encoder.so|2f463a292368dca26acef73251a264a33095372f
 lib/omx/libOMX.Exynos.VP8.Decoder.so|7afb6748434c64354e9d5568b004901365a5cf06
 lib/omx/libOMX.Exynos.VP8.Encoder.so|3cbaf4e5088d72ca6b26303e881dfff59d1949b3
 lib/omx/libOMX.Exynos.WMV.Decoder.so|fd60b506d708dd065d9cbd60ade13d0ff3ab14cb
-
-# SOMX - From the S8
-lib/libExynosOMX_Resourcemanager.so
-lib/libExynosOMX_Core.so
-lib/libsomx263dsw.so
-lib/libsomx264dsw.so
-lib/libsomxhevcdsw.so
-lib/libsomxmp4vdsw.so
-lib/libsomxmp43d.so
-lib/libsomxsr263d.so
-lib/libsomxvc1dsw.so
-lib/libsomxvp8d.so
-lib/libsomxwmv7d.so
-lib/libsomxwmv8d.so
-lib/libsomxamrd.so
-lib/libsomxadpcmd.so
-lib/libsomxflacd.so
-lib/libsomxaacd.so
-lib/libsomxmp3d.so
-lib/libsomxwmad.so
-lib/libsomxqcelpd.so
-lib/libsomxqcelpe.so
-lib/libsomxevrcd.so
-lib/libsomxevrce.so
-lib/libsomxaace.so
-lib/libsomxnaace.so
-lib/libarac.so
-lib/libsavsac.so
-lib/libsavscmn.so
-lib/libsavsff.so
-lib/libsavsmeta.so
-lib/libsavsvc.so
-lib/libsnaace.so
-lib/libsnamrnb.so
-lib/libsnamrwb.so
-lib/libsxqk.so
-etc/somxreg.conf
