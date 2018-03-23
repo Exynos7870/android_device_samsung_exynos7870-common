@@ -10,7 +10,7 @@
 	Copyright (C) 2018 Oves Bilal
 	Copyright (C) 2018 Sean Hoyt
 	Copyright (C) 2018 Abhay Ruparel
-
+	Copyright (C) 2018 Matt Grf (McFy49)
 
 ### License
 Apache License 2.0 (Apache-2.0) (Located at LICENSE, read more at [tldrlegal.com/license/apache-license-2.0](https://tldrlegal.com/license/apache-license-2.0-%28apache-2.0%29))
