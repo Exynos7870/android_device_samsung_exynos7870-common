@@ -105,6 +105,9 @@ on post-fs-data
 
     mkdir /data/anr 0775 system system
 
+    restorecon_recursive /data
+    restorecon_recursive /efs
+
 on boot
     # 1-key hard reset
     chown system system /sys/power/reset_enabled
