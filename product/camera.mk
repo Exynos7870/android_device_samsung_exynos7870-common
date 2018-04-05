@@ -15,7 +15,6 @@
 
 #Camera
  PRODUCT_PACKAGES += \
-    Snap \
     camera.universal7870 \
     libexynoscamera_shim \
     libstagefright_shim \
