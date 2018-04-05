@@ -83,6 +83,15 @@
         <item>9</item>
     </integer-array>
 
+    <!-- The default iface on which to monitor data use -->
+    <string translatable="false" name="config_datause_iface">rmnet0</string>
+
+    <!-- The RadioAccessFamilies supported by the device.
+         Empty is viewed as "all".  Only used on devices which
+         don't support RIL_REQUEST_GET_RADIO_CAPABILITY
+         format is UMTS|LTE|... -->
+    <string translatable="false" name="config_radio_access_family">GSM | WCDMA | LTE</string>
+
     <string-array name="config_mobile_tcp_buffers">
         <item>lte:1048576,3145728,4194304,1048576,3145728,4194304</item>
     </string-array>
