@@ -45,7 +45,6 @@ ro.oem_unlock_supported=1
 media.stagefright.legacyencoder=1
 media.stagefright.less-secure=1
 sys.use_fifo_ui=1
-persist.media.treble_omx=false
 
 # Wifi
 wifi.interface=wlan0
