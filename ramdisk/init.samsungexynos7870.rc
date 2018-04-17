@@ -388,6 +388,10 @@ on boot
     chmod 444 /sys/class/sec/sdcard/cd_cnt
     chown system system /sys/class/sec/sddata/sd_data
     chmod 444 /sys/class/sec/sddata/sd_data
+
+    # SSWAP
+    write /proc/sys/vm/swappiness 200
+
 on fs
     mount_all /fstab.samsungexynos7870 --early
 
@@ -500,6 +504,12 @@ service gpsd /system/bin/gpsd
 service charger /charger
     class charger
     seclabel u:r:healthd:s0
+
+service sswap /system/bin/sswap -s
+    class core
+    user root
+    group root
+    oneshot
 
 service cameraserver /system/bin/cameraserver
     class main
