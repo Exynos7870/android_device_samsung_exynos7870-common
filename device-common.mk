@@ -16,6 +16,10 @@
 
 LOCAL_PATH := device/samsung/exynos7870-common
 
+# Doze mode
+PRODUCT_PACKAGES += \
+    XiaomiDoze
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
