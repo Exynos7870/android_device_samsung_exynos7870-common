@@ -1,15 +1,16 @@
 -----------------------------------------------------------
-# Common Device Configuration For Samsung Exynos7870 Series
+# Common Device Configuration For Samsung Exynos 7870 Series
 -----------------------------------------------------------
 
 ### Copyright
 
 	Copyright (C) 2018 Siddhant Naik (Darklord1731)
+	Copyright (C) 2018 Valera Chigir (Valera1978)	
 	Copyright (C) 2018 Shivam Jha
 	Copyright (C) 2018 Mohi1117
-	Copyright (C) 2018 Oves Bilal
+	Copyright (C) 2018 Oves Shaikh (Oves786)
 	Copyright (C) 2018 Sean Hoyt
-	Copyright (C) 2018 Abhay Ruparel
+	Copyright (C) 2018 Ananjaser (Anan1211)
 	Copyright (C) 2018 Matt Grf (McFy49)
 
 ### License
