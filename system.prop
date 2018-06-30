@@ -3,6 +3,11 @@ af.fast_track_multiplier=1
 audio_hal.force_voice_config=wide
 ro.config.vc_call_vol_steps=15
 
+# ART
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.image-dex2oat-filter=speed
+ro.sys.fw.dex2oat_thread_count=8
+
 # Factory Reset Protection
 ro.frp.pst=/dev/block/platform/13540000.dwmmc0/by-name/PERSISTENT
 
@@ -14,6 +19,11 @@ debug.hwui.use_buffer_age=false
 persist.sys.ui.hw=true
 video.accelerate.hw=1
 debug.sf.hw=1
+
+# Higher fling velocities to smooth scrolling
+# and provide better responsiveness
+ro.min.fling_velocity=160
+ro.max.fling_velocity=20000
 
 # Boot directly from charger mode
 ro.enable_boot_charger_mode=1
