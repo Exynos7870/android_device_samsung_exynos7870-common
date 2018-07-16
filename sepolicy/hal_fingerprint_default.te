@@ -8,3 +8,5 @@ allow hal_fingerprint_default system_data_file:file { getattr open read };
 allow hal_fingerprint_default fingerprint_device:chr_file { read write open getattr ioctl };
 
 allow hal_fingerprint_default tee:unix_stream_socket connectto;
+
+allow hal_fingerprint_default fingerprintd_data_file:file { unlink write create rename };
