@@ -40,3 +40,6 @@ extern "C" void _ZN7android13GraphicBufferC1EjjijjP13native_handleb(
     _ZN7android13GraphicBufferC1EjjijjjP13native_handleb(inHandle, inMethod, inWidth, inHeight,
         inFormat, static_cast<uint32_t>(1), static_cast<uint64_t>(inUsage), inStride);
 }
+
+
+void _ZN7android16CameraParameters17EFFECT_POINT_BLUEE() {}
