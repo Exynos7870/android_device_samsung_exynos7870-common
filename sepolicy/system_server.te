@@ -49,3 +49,5 @@ allow system_server sysfs_sec:dir search;
 allow system_server sysfs_sec:lnk_file read;
 allow system_server crash_dump:process getpgid;
 allow system_server unlabeled:dir write;
+
+allow system_server fingerprint_data_file:dir { search rw_dir_perms };

@@ -21,3 +21,5 @@ type sysfs_sec, fs_type, fs_type, fs_type, mlstrustedobject;
 type sysfs_camera_writable, fs_type, sysfs_type, mlstrustedobject;
 
 allow sysfs_type tmpfs:filesystem associate;
+
+type fingerprint_data_file, file_type, data_file_type;
