@@ -34,7 +34,8 @@ persist.radio.sib16_support=1
 ro.ril.hsxpa=1
 ro.ril.gprsclass=10
 ro.ril.telephony.mqanelements=6
-ro.telephony.default_network=9
+# Start in global mode
+ro.telephony.default_network=10
 ro.telephony.get_imsi_from_sim=true
 ro.ril.force_eri_from_xml=true
 persist.radio.add_power_save=1
