@@ -17,16 +17,11 @@ PRODUCT_PACKAGES += \
    com.android.nfc_extras \
    NfcNci \
    Tag \
-   android.hardware.wifi@1.0 \
-   android.hardware.wifi@1.0-impl \
    android.hardware.wifi@1.0-service \
    hostapd \
    libqsap_sdk \
    libQWiFiSoftApCfg \
    libwpa_client \
    wificond \
-   wifilogd \
-   wifiloader \
-   wlutil \
    wpa_supplicant \
    wpa_supplicant.conf
