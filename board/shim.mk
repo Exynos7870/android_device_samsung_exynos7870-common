@@ -27,19 +27,31 @@ TARGET_LD_SHIM_LIBS += \
     /system/lib/omx/libOMX.Exynos.AVC.Encoder.so|/vendor/lib/libui_shim.so \
     /system/lib/omx/libOMX.Exynos.HEVC.Decoder.so|/vendor/lib/libui_shim.so \
     /system/lib/omx/libOMX.Exynos.HEVC.Encoder.so|/vendor/lib/libui_shim.so \
+    /system/lib/omx/libOMX.Exynos.MPEG2.Decoder.so|/vendor/lib/libui_shim.so \
     /system/lib/omx/libOMX.Exynos.MPEG4.Decoder.so|/vendor/lib/libui_shim.so \
     /system/lib/omx/libOMX.Exynos.MPEG4.Encoder.so|/vendor/lib/libui_shim.so \
-    /system/lib/omx/libOMX.Exynos.VP8.Decoder.so|/vendor/lib/libui_shim.so \
-    /system/lib/omx/libOMX.Exynos.VP8.Encoder.so|/vendor/lib/libui_shim.so \
     /system/lib/omx/libOMX.Exynos.VP9.Decoder.so|/vendor/lib/libui_shim.so \
-    /system/lib/omx/libOMX.Exynos.WMV.Decoder.so|/vendor/lib/libui_shim.so \
     /system/lib/omx/libOMX.Exynos.AVC.Decoder.so|/vendor/lib/libstagefright_shim.so \
     /system/lib/omx/libOMX.Exynos.AVC.Encoder.so|/vendor/lib/libstagefright_shim.so \
     /system/lib/omx/libOMX.Exynos.HEVC.Decoder.so|/vendor/lib/libstagefright_shim.so \
     /system/lib/omx/libOMX.Exynos.HEVC.Encoder.so|/vendor/lib/libstagefright_shim.so \
+    /system/lib/omx/libOMX.Exynos.MPEG2.Decoder.so|/vendor/lib/libstagefright_shim.so \
     /system/lib/omx/libOMX.Exynos.MPEG4.Decoder.so|/vendor/lib/libstagefright_shim.so \
     /system/lib/omx/libOMX.Exynos.MPEG4.Encoder.so|/vendor/lib/libstagefright_shim.so \
-    /system/lib/omx/libOMX.Exynos.VP8.Decoder.so|/vendor/lib/libstagefright_shim.so \
-    /system/lib/omx/libOMX.Exynos.VP8.Encoder.so|/vendor/lib/libstagefright_shim.so \
     /system/lib/omx/libOMX.Exynos.VP9.Decoder.so|/vendor/lib/libstagefright_shim.so \
-    /system/lib/omx/libOMX.Exynos.WMV.Decoder.so|/vendor/lib/libstagefright_shim.so
+    /system/lib64/omx/libOMX.Exynos.AVC.Decoder.so|/vendor/lib/libui_shim.so \
+    /system/lib64/omx/libOMX.Exynos.AVC.Encoder.so|/vendor/lib/libui_shim.so \
+    /system/lib64/omx/libOMX.Exynos.HEVC.Decoder.so|/vendor/lib/libui_shim.so \
+    /system/lib64/omx/libOMX.Exynos.HEVC.Encoder.so|/vendor/lib/libui_shim.so \
+    /system/lib64/omx/libOMX.Exynos.MPEG2.Decoder.so|/vendor/lib/libui_shim.so \
+    /system/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so|/vendor/lib/libui_shim.so \
+    /system/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so|/vendor/lib/libui_shim.so \
+    /system/lib64/omx/libOMX.Exynos.VP9.Decoder.so|/vendor/lib/libui_shim.so \
+    /system/lib64/omx/libOMX.Exynos.AVC.Decoder.so|/vendor/lib/libstagefright_shim.so \
+    /system/lib64/omx/libOMX.Exynos.AVC.Encoder.so|/vendor/lib/libstagefright_shim.so \
+    /system/lib64/omx/libOMX.Exynos.HEVC.Decoder.so|/vendor/lib/libstagefright_shim.so \
+    /system/lib64/omx/libOMX.Exynos.HEVC.Encoder.so|/vendor/lib/libstagefright_shim.so \
+    /system/lib64/omx/libOMX.Exynos.MPEG2.Decoder.so|/vendor/lib/libstagefright_shim.so \
+    /system/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so|/vendor/lib/libstagefright_shim.so \
+    /system/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so|/vendor/lib/libstagefright_shim.so \
+    /system/lib64/omx/libOMX.Exynos.VP9.Decoder.so|/vendor/lib/libstagefright_shim.so \
