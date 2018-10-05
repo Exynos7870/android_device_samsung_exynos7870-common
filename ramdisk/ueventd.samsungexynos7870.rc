@@ -49,8 +49,9 @@
 /dev/smd4                 0660  system  radio
 
 # sensor sysfs properties
-/sys/devices/virtual/input/input*	poll_delay	0660	system	radio
-/sys/devices/virtual/input/input*	enable		0660	system	radio
+/sys/devices/virtual/input/input*    poll_delay    0660    system    radio
+/sys/devices/virtual/input/input*    enable        0660    system    radio
+/dev/input/event*	  0660   system		input
 
 # Sensorhub IIO
 /dev/ssp_sensorhub        0660   system		system
