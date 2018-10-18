@@ -1,0 +1,31 @@
+#
+# Copyright (C) 2018 The LineageOS Project
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+ # Graphics
+lib/hw/gralloc.exynos5.so
+lib/hw/hwcomposer.exynos5.so
+lib/hw/memtrack.exynos5.so
+lib/hw/gatekeeper.exynos7870.so
+lib/hw/keystore.exynos7870.so
+lib/libcsc.so
+lib/libexynosdisplay.so
+lib/libexynosscaler.so
+lib/libexynosgscaler.so
+lib/libexynosutils.so
+lib/libexynosv4l2.so
+lib/libfimg.so
+lib/libhdmi.so
+lib/libhwcutils.so
+lib/libion_exynos.so
+lib/libhwjpeg.so
+lib/libmpp.so
