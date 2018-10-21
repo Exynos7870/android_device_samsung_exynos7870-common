@@ -19,6 +19,9 @@ LOCAL_PATH := device/samsung/exynos7870-common
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Include common vendor tree
++$(call inherit-product, vendor/samsung/exynos7870-common/exynos7870-common-vendor.mk)
+
 # Inherit splitted common product configs
 -include $(LOCAL_PATH)/product/*.mk
 
