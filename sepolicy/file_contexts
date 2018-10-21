@@ -84,3 +84,10 @@
 /system/bin/wifiloader                                u:object_r:wifiloader_exec:s0
 /system/bin/cbd                                      u:object_r:cpboot-daemon_exec:s0
 /system/bin/gpsd                                     u:object_r:gpsd_exec:s0
+
+# Mobicore
+/dev/mobicore                u:object_r:tee_device:s0
+/dev/mobicore-user           u:object_r:tee_device:s0
+/data/misc/mcRegistry(/.*)?  u:object_r:tee_data_file:s0
+/system/bin/mcDriverDaemon   u:object_r:tee_exec:s0
+
