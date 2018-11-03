@@ -13,7 +13,16 @@ debug.hwc.skip_dma_types=0,2
 ro.enable_boot_charger_mode=1
 
 # Radio
-persist.radio.sib16_support=0
+rild.libpath=/system/lib/libsec-ril.so
+rild.libargs=-d
+/dev/umts_ipc0
+exynos.ril.modempath=/dev/block/mmcblk0p5
+exynos.ril.nvpath=/efs/
+ro.debug_level=0x4948
+ro.hdcp2.rx=tz
+vendor.sec.rild.libpath=/vendor/lib/libsec-ril.so
+vendor.sec.rild.libpath2=/vendor/lib/libsec-ril-dsds.so
+persist.radio.sib16_support=1
 ro.ril.hsxpa=1
 ro.ril.gprsclass=10
 ro.ril.telephony.mqanelements=6
