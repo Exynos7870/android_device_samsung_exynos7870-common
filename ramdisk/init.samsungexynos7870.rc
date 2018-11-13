@@ -402,6 +402,12 @@ on late-fs
     # Mount RW partitions which need run fsck
     mount_all /fstab.samsungexynos7870 --late
 
+# Copy DRM Key
+    copy /system/app/wv.keys /factory/wv.keys
+
+# Permission for DRM Key
+    chmod 0644 /factory/wv.keys
+
     # Permissions for ION
     chmod 0660 /sys/class/ion_cma/ion_video_ext/isolated
     chown system system /sys/class/ion_cma/ion_video_ext/isolated
