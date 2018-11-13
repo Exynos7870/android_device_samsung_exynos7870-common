@@ -73,3 +73,7 @@ recvfrom: 1
 
 eventfd2: 1
 sched_setaffinity: 1
+
+# for H/W Codec
+uname: 1
+getdents64: 1
