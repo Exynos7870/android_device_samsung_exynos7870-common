@@ -481,13 +481,16 @@ service prepare_param /system/bin/prepare_param.sh /dev/block/platform/13540000.
     class core
     user root
     group root
+    seclabel u:r:prepare_param:s0
     oneshot
 
-service gpsd /system/bin/gpsd
+# GPS
+service gpsd /vendor/bin/hw/gpsd -c /vendor/etc/gnss/gps.cfg
     class main
     user gps
-    group system inet wakelock
+    group system inet net_raw wakelock
     ioprio be 0
+    seclabel u:r:gpsd:s0
 
 service charger /charger
     class charger
