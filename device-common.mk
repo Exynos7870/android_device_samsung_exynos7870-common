@@ -15,6 +15,9 @@
 #
 
 LOCAL_PATH := device/samsung/exynos7870-common
+LOCAL_PRIVATE_PLATFORM_APIS := true
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/camera/external_camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/external_camera_config.xml
 
 # Doze mode
 PRODUCT_PACKAGES += \

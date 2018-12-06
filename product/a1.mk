@@ -1,9 +1,9 @@
 PRODUCT_PACKAGES += \
+   mcDriverDaemon \
    FlipFlap \
    libtfa98xx \
    audio_amplifier.universal7870 \
    libtinycompress \
-   mcDriverDaemon \
    fingerprint.exynos5 \
    libbauthtzcommon_shim \
    android.hardware.biometrics.fingerprint@2.1-impl \

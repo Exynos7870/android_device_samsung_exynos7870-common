@@ -19,11 +19,20 @@ LOCAL_PATH := device/samsung/exynos7870-common
 # Include headers
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/exynos7870-common/include
 
+TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
+    /system/bin/mediaserver=24 \
+    /system/vendor/bin/hw/rild=27
+
 # SELinux
 BOARD_SEPOLICY_DIRS += device/samsung/exynos7870-common/sepolicy
+VENDOR_SECURITY_PATCH := 2018-11-01
+
+TARGET_OMIT_NETD_TETHER_FTP_HELPER := true
 
 # Properties
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 
-# Inherit splitted common board configs
+# HWComposer Inherit splitted common board configs
+TARGET_HWC2_NO_SKIPVALIDATE := true
+
 -include $(LOCAL_PATH)/board/*.mk

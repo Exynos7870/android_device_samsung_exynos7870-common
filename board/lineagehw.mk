@@ -14,4 +14,8 @@
 #
 
 # Samsung Hardware
-BOARD_HARDWARE_CLASS := device/samsung/exynos7870-common/lineagehw
+#BOARD_HARDWARE_CLASS := device/samsung/exynos7870-common/lineagehw
+
+JAVA_SOURCE_OVERLAYS := \
+    org.lineageos.hardware|hardware/samsung/lineagehw|**/*.java \
+    org.lineageos.hardware|$(LOCAL_PATH)/lineagehw|**/*.java
