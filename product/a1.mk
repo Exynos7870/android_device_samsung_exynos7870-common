@@ -1,4 +1,6 @@
 PRODUCT_PACKAGES += \
+   libinit_a3y17lte \
+   libbauthtzcommon_shim \
    mcDriverDaemon \
    FlipFlap \
    libtfa98xx \

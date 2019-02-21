@@ -1,0 +1,1 @@
+allow traceur_app bluetooth_prop:file read;

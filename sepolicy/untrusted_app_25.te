@@ -1,0 +1,4 @@
+allow untrusted_app_25 bluetooth_prop:file read;
+allow untrusted_app_25 runtime_event_log_tags_file:file read;
+
+

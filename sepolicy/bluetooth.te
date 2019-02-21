@@ -3,3 +3,9 @@ allow bluetooth bluetooth_device:chr_file { rw_file_perms ioctl };
 
 # /data/.cid.info
 allow bluetooth wifi_data_file:file r_file_perms;
+
+allow bluetooth storage_stub_file:dir getattr;
+allow bluetooth bootloader_boot_reason_prop:file read;
+allow bluetooth boottime_prop:file read;
+allow bluetooth crash_dump:process noatsecure;
+allow bluetooth crash_dump:process noatsecure;

@@ -1,0 +1,4 @@
+allow platform_app bluetooth_prop:file read;
+allow platform_app storage_stub_file:dir getattr;
+allow platform_app bootloader_boot_reason_prop:file read;
+

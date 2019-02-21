@@ -1,0 +1,11 @@
+allow priv_app bluetooth_prop:file read;
+allow priv_app cpboot-daemon_exec:file getattr;
+allow priv_app ctl_dumpstate_prop:file read;
+allow priv_app ctl_interface_restart_prop:file read;
+allow priv_app device:dir { open read };
+allow priv_app logd_exec:file getattr;
+allow priv_app logpersistd_logging_prop:file read;
+allow priv_app sysfs:dir { open read };
+allow priv_app sysfs:file { open read };
+allow init sysfs_devices_system_cpu:file write;
+

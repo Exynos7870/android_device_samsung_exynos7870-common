@@ -1,2 +1,5 @@
 # HWC
 allow surfaceflinger secmem_device:chr_file rw_file_perms;
+allow surfaceflinger sysfs:file read;
+allow surfaceflinger sysfs:file open;
+allow surfaceflinger sysfs:file getattr;
