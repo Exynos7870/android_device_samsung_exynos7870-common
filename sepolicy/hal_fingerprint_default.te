@@ -1,0 +1,15 @@
+allow hal_fingerprint_default device:chr_file ioctl;
+allow hal_fingerprint_default system_data_file:dir { read write };
+allow hal_fingerprint_default system_data_file:file read;
+allow hal_fingerprint_default device:chr_file getattr;
+allow hal_fingerprint_default system_data_file:file open;
+allow hal_fingerprint_default system_data_file:file getattr;
+allow hal_fingerprint_default fingerprintd_data_file:dir write;
+allow hal_fingerprint_default tee_device:chr_file { read write };
+allow hal_fingerprint_default tee_device:chr_file open;
+allow hal_fingerprint_default tee_device:chr_file ioctl;
+allow hal_fingerprint_default system_data_file:dir add_name;
+allow hal_fingerprint_default system_data_file:dir create;
+allow hal_fingerprint_default system_data_file:dir remove_name;
+allow hal_fingerprint_default system_data_file:dir open;
+allow hal_fingerprint_default system_data_file:dir rmdir;

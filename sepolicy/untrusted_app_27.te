@@ -1,0 +1,7 @@
+allow untrusted_app_27 boottime_prop:file read;
+allow untrusted_app_27 ctl_bootanim_prop:file read;
+allow untrusted_app_27 debugfs:dir { open read };
+allow untrusted_app_27 proc_zoneinfo:file { open read };
+allow untrusted_app_27 proc_version:file getattr;
+allow untrusted_app_27 sysfs_net:dir search;
+allow untrusted_app_27 proc_zoneinfo:file getattr;

@@ -1,4 +1,6 @@
 PRODUCT_PACKAGES += \
+   libinit_a3y17lte \
+   libbauthtzcommon_shim \
    mcDriverDaemon \
    FlipFlap \
    libtfa98xx \
@@ -10,7 +12,6 @@ PRODUCT_PACKAGES += \
    android.hardware.biometrics.fingerprint@2.1-service \
    lights.universal7870 \
    android.hardware.light@2.0-impl \
-   AdvancedDisplay \
    android.hardware.nfc@1.0-impl \
    libnfc-nci \
    libnfc_nci_jni \

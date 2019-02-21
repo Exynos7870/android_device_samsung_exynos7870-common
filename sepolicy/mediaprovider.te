@@ -1,0 +1,2 @@
+allow mediaprovider storage_stub_file:dir getattr;
+
