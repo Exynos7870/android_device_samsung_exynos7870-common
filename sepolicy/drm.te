@@ -1,0 +1,2 @@
+allow hal_drm_default media_data_file:dir { getattr search write add_name read open };
+allow hal_drm_default media_data_file:file { getattr open create };
